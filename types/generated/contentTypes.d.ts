@@ -541,6 +541,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
 export interface ApiTestTest extends Struct.CollectionTypeSchema {
   collectionName: 'tests';
   info: {
+    description: '';
     displayName: 'Test';
     pluralName: 'tests';
     singularName: 'test';
@@ -549,6 +550,8 @@ export interface ApiTestTest extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    Color: Schema.Attribute.String &
+      Schema.Attribute.CustomField<'plugin::color-picker.color'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
