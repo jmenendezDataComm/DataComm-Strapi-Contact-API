@@ -569,6 +569,8 @@ export interface ApiTestTest extends Struct.CollectionTypeSchema {
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::test.test'> &
       Schema.Attribute.Private;
+    pickcountry: Schema.Attribute.String &
+      Schema.Attribute.CustomField<'plugin::country-select.country'>;
     publishedAt: Schema.Attribute.DateTime;
     Title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;

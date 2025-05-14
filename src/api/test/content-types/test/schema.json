@@ -31,6 +31,10 @@
     "headervideo": {
       "type": "customField",
       "customField": "plugin::video-field.video"
+    },
+    "pickcountry": {
+      "type": "customField",
+      "customField": "plugin::country-select.country"
     }
   }
 }
