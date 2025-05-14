@@ -16,7 +16,16 @@ export default [
         useDefaults: true,
         directives: {
           'script-src': ['https://cdn.ckeditor.com'],
-          'connect-src': ['https://proxy-event.ckeditor.com']
+          'connect-src': ['https://proxy-event.ckeditor.com'],
+          "frame-src":[
+                        "'self'",
+                        "youtube.com",
+                        "www.youtube.com",
+                        "vimeo.com",
+                        "*.vimeo.com",
+                        "facebook.com",
+                        "www.facebook.com",
+                    ]
         },
       },
     },

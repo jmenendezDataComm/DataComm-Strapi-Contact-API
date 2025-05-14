@@ -564,6 +564,8 @@ export interface ApiTestTest extends Struct.CollectionTypeSchema {
           preset: 'rich';
         }
       >;
+    headervideo: Schema.Attribute.JSON &
+      Schema.Attribute.CustomField<'plugin::video-field.video'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::test.test'> &
       Schema.Attribute.Private;
