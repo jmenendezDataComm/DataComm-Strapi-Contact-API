@@ -34,6 +34,7 @@
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.0.0",
     "strapi-plugin-country-select": "^2.1.0",
+    "strapi-plugin-navigation": "^3.0.13",
     "styled-components": "^6.0.0"
   },
   "devDependencies": {
