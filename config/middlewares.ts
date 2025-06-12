@@ -13,6 +13,7 @@ export default [
     name: 'strapi::security',
     config: {
       contentSecurityPolicy: {
+        cors: { enabled: true, headers: '*' },
         useDefaults: true,
         directives: {
           'script-src': ['https://cdn.ckeditor.com'],
