@@ -16,7 +16,7 @@ export default [
         cors: { enabled: true, headers: '*' },
         useDefaults: true,
         directives: {
-          'script-src': ['https://cdn.ckeditor.com'],
+          'script-src': ["'self'", "'unsafe-inline'",'https://cdn.ckeditor.com'],
           'connect-src': ['https://proxy-event.ckeditor.com'],
           "frame-src":[
                         "'self'",
